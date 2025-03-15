@@ -68,17 +68,21 @@ main {
 /* logo */
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
+    margin: 70px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.2);
 }
 
-.logo img {
-    width: 350px;
-    margin-top: 65px;
-    margin-bottom: 65px;
-
+.logo p {
+    letter-spacing: 3px;
+    font-size: 13px;
 }
+
+.logo h1 {
+    font-size: 30px;
+}
+
 
 /* Menu */
 .menu {
@@ -99,7 +103,6 @@ main {
 .btn {
     padding: 11px 25px 11px;
     background: none;
-
     border: solid white 1px;
     color: rgb(214, 214, 214);
     border-radius: 5px;
@@ -113,6 +116,7 @@ main {
 .agende {
     display: block;
     justify-content: center;
+    align-items: center;
 }
 
 /* Cards */
@@ -120,7 +124,7 @@ main {
 .card-list .card-item {
     color: #fffffffd;
     background-color: rgba(0, 0, 0, 0.4);
-    width: 200px;
+    width: 220px;
     height: 300px;
     padding: 10px;
     display: flex;
@@ -129,7 +133,17 @@ main {
     justify-content: center;
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    margin: -15px;
+}
+
+.conteiner-card {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card-list {
+    gap: 20px;
+    
 }
 
 .card-list .card-item .icon-img {
@@ -169,7 +183,7 @@ main {
 }
 
 .slider-wrapper {
-    max-width: 800px;
+    max-width: 100%;
     margin: 70px 0 60px;
 }
 
@@ -213,11 +227,21 @@ main {
 
 }
 
+button:hover {
+    color: black;
+}
+
+
+.btn:hover {
+ background-color: #e3e3e3;
+}
+
+
 
 
 /* Mobile */
 
-@media screen and (max-width: 896px) { 
+@media screen and (max-width: 768px) { 
 
     * {
        text-decoration: none;
@@ -230,12 +254,19 @@ main {
          
     }
 
-    .logo img {
-        width: 300px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    
-    }
+  /* logo */
+
+.logo {
+    display: block;
+    text-align: center;
+    margin: 40px;
+}
+
+.logo p {
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
     .btn {
         color: rgb(255, 255, 255);
 
@@ -249,13 +280,13 @@ main {
 
     
     .menu {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .menu ul {
         display: flex;
-        gap: 5px;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.2);
+        gap: 9px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1.4);
     }
 
     .top-bar {
@@ -281,7 +312,6 @@ main {
         font-size: 10px;
     }
 
-
     .section01 h1 {
         font-size: 1em;
         margin-bottom: 20px;
@@ -294,6 +324,9 @@ main {
         line-height: 1.2;
     
     }
-    
+    .agende {
+        scale: 85%;
+        margin-top: -45px;
+    }
 }
 
